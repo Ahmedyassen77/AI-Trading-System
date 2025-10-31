@@ -1,9 +1,0 @@
-symbol: "EURUSD"
-timeframe: "M15"
-risk_pct: 0.5
-sl_points: 150
-tp_points: 300
-backtest_bars: 2000
-signals_dir: "signals"
-log_file: "logs/run.log"
-mode: "backtest"      # backtest أو live
