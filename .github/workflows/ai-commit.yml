@@ -1,0 +1,39 @@
+name: ai-commit
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  commit:
+    # أمان: نفّذ فقط لو صاحب التعليق هو حسابك وأمر /ai-commit موجود
+    if: ${{ github.event.comment.user.login == 'Ahmedyassen77' && contains(github.event.comment.body, '/ai-commit ') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Parse command
+        id: parse
+        shell: bash
+        run: |
+          CMD="${{ github.event.comment.body }}"
+          # اسم الملف هو الكلمة الأولى بعد الأمر
+          FILE=$(echo "$CMD" | sed -n 's@.*/ai-commit \([^ ]*\).*@\1@p')
+          # بقية السطر تصبح محتوى الملف (قد تكون كلمات متعددة)
+          CONTENT=$(echo "$CMD" | sed -n 's@.*/ai-commit [^ ]* \(.*\)@\1@p')
+          echo "file=$FILE" >> $GITHUB_OUTPUT
+          printf '%s' "$CONTENT" > "$FILE"
+
+      - name: Commit changes
+        shell: bash
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ steps.parse.outputs.file }}"
+          git commit -m "ci: ai-commit ${{ steps.parse.outputs.file }}"
+          git push
