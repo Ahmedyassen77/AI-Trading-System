@@ -16,7 +16,7 @@ def simple_logic(df, sl_pts, tp_pts, symbol):
             action, sl, tp, cmt = "BUY", price - sl_pts*1e-5, price + tp_pts*1e-5, "test_buy"
         else:
             action, sl, tp, cmt = "SELL", price + sl_pts*1e-5, price - tp_pts*1e-5, "test_sell"
-        lines.append(f"{ts};{symbol};{action};{price:.5f};{sl:.5f};{tp:.5f};0.5;{cmt}")
+        lines.append(f"{ts};{symbol};{action};{price:.5f};{sl:.5f};{tp:.5f};1.0;{cmt}")
     return lines
 
 def main():
