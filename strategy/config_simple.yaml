@@ -1,0 +1,21 @@
+# إعدادات الاستراتيجية البسيطة للاختبار
+
+# معلومات الرمز والإطار الزمني
+symbol: "EURUSD"
+timeframe: "M15"
+
+# إدارة المخاطر
+risk_pct: 1.0        # نسبة المخاطرة من رأس المال
+sl_points: 150       # Stop Loss بالنقاط
+tp_points: 300       # Take Profit بالنقاط
+
+# إعدادات الباكتيست
+backtest_bars: 2000  # عدد الشموع للاختبار
+
+# مجلدات الإخراج
+signals_dir: "signals"
+results_dir: "results"
+logs_dir: "Logs"
+
+# وضع التشغيل
+mode: "backtest"     # backtest أو live

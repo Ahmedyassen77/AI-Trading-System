@@ -1,0 +1,58 @@
+# ملف طلبات الباكتيست
+# كل طلب يحتوي على الإعدادات المطلوبة للاختبار
+
+backtests:
+  # اختبار بسيط على EURUSD
+  - id: "test_001"
+    name: "Simple Strategy - EURUSD M15"
+    enabled: true
+    
+    # إعدادات الاستراتيجية
+    strategy: "simple_strategy"
+    config_file: "strategy/config_simple.yaml"
+    
+    # إعدادات السوق
+    symbol: "EURUSD"
+    timeframe: "M15"
+    
+    # فترة الباكتيست
+    from_date: "2024-01-01"
+    to_date: "2024-12-31"
+    bars: 2000
+    
+    # إعدادات EA
+    ea_settings:
+      enable_trading: true
+      fixed_lots: 0.01
+      use_risk_from_file: false
+      slippage_points: 3
+      magic: 12345
+      
+    # ملف التقرير
+    report_path: "results/test_001_report.html"
+    summary_path: "results/test_001_summary.json"
+
+  # اختبار ثاني (معطل حالياً)
+  - id: "test_002"
+    name: "Simple Strategy - GBPUSD H1"
+    enabled: false
+    
+    strategy: "simple_strategy"
+    config_file: "strategy/config_simple.yaml"
+    
+    symbol: "GBPUSD"
+    timeframe: "H1"
+    
+    from_date: "2024-01-01"
+    to_date: "2024-12-31"
+    bars: 1000
+    
+    ea_settings:
+      enable_trading: true
+      fixed_lots: 0.01
+      use_risk_from_file: false
+      slippage_points: 3
+      magic: 12346
+      
+    report_path: "results/test_002_report.html"
+    summary_path: "results/test_002_summary.json"

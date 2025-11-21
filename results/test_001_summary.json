@@ -1,0 +1,39 @@
+{
+  "test_id": "test_001",
+  "strategy": "simple_strategy",
+  "symbol": "EURUSD",
+  "timeframe": "M15",
+  "period": {
+    "from": "2024-01-01",
+    "to": "2024-12-31",
+    "bars": 2000
+  },
+  "results": {
+    "initial_deposit": 10000.0,
+    "final_balance": 10500.0,
+    "profit": 500.0,
+    "profit_percent": 5.0,
+    "total_trades": 100,
+    "winning_trades": 60,
+    "losing_trades": 40,
+    "win_rate": 60.0,
+    "max_drawdown": 250.0,
+    "max_drawdown_percent": 2.5,
+    "profit_factor": 1.5,
+    "sharpe_ratio": 1.2,
+    "avg_trade": 5.0,
+    "avg_win": 15.0,
+    "avg_loss": -10.0,
+    "largest_win": 50.0,
+    "largest_loss": -30.0
+  },
+  "ea_settings": {
+    "enable_trading": true,
+    "fixed_lots": 0.01,
+    "slippage_points": 3,
+    "magic": 12345
+  },
+  "generated_at": "2025-11-21T12:00:00Z",
+  "status": "completed",
+  "notes": "This is a sample result for testing"
+}

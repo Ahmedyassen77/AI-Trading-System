@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+*.log
+Logs/*.log
+logs/*.log
+
+# MT5 Files
+*.ex5
+*.ex4
+*.set
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary
+*.tmp
+*.temp
+*.bak
+
+# Results (keep structure, ignore content)
+results/*.html
+results/*.xml
+results/*.csv
+
+# Signals (generated files)
+signals/*.txt
+!signals/.gitkeep
+
+# Keep directory structure
+!.gitkeep
