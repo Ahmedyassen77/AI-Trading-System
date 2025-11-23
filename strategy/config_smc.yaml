@@ -1,0 +1,74 @@
+# ============================================
+# SMC Strategy Configuration
+# استراتيجية Smart Money Concepts
+# ============================================
+
+# معلومات الرمز
+symbol: "EURUSD"
+
+# Multi-Timeframe Setup
+htf_timeframe: "H4"      # Higher Timeframe لتحديد Bias
+mtf_timeframe: "M15"     # Middle Timeframe للهيكل
+ltf_timeframe: "M5"      # Lower Timeframe للدخول
+
+# Swing Detection Parameters
+swing_lookback: 3        # عدد الشموع لتأكيد Swing High/Low
+sweep_threshold: 0.0001  # حد اختراق Sweep (10 pips)
+
+# Risk Management
+risk_pct: 1.0           # نسبة المخاطرة من رأس المال
+min_rr: 2.0             # أقل Risk:Reward مقبول
+
+# Session Filters
+use_asian_filter: true   # تجاهل OB من الجلسة الآسيوية
+asian_start_utc: 23      # بداية الجلسة الآسيوية (UTC)
+asian_end_utc: 7         # نهاية الجلسة الآسيوية (UTC)
+london_start_utc: 7      # بداية جلسة لندن (UTC)
+
+# Liquidity Detection
+double_top_threshold: 0.003     # 0.3% للقمم المزدوجة
+double_bottom_threshold: 0.003  # 0.3% للقيعان المزدوجة
+
+# Order Block Settings
+ob_max_lookback: 10      # أقصى عدد شموع للبحث عن OB
+ob_extend_right: true    # تمديد OB لليمين حتى يتم لمسه
+
+# FVG Settings
+fvg_min_size: 0.0005    # أقل حجم لـ FVG (5 pips)
+fvg_max_age: 50         # أقصى عدد شموع لعمر FVG
+
+# Drawing Colors (للـ EA)
+colors:
+  bullish_bias: "0x90EE90"      # أخضر فاتح
+  bearish_bias: "0xFFB6C1"      # أحمر فاتح
+  bullish_ob: "0x00FF00"        # أخضر
+  bearish_ob: "0xFF0000"        # أحمر
+  fvg: "0xFFFF00"               # أصفر
+  liquidity_high: "0xFFA500"    # برتقالي
+  liquidity_low: "0x0000FF"     # أزرق
+  sweep: "0x800080"             # بنفسجي
+  choch: "0x00FFFF"             # سماوي
+  bos: "0xFF00FF"               # قرمزي
+
+# Confirmation Candle Types
+confirmations:
+  - "bullish_engulfing"
+  - "bearish_engulfing"
+  - "inside_bar"
+
+# Backtest Settings
+backtest_bars: 2000
+signals_dir: "signals"
+results_dir: "results"
+logs_dir: "Logs"
+
+# Mode
+mode: "backtest"  # backtest أو live
+
+# Advanced Settings
+advanced:
+  filter_low_volume: false
+  min_volume: 100
+  use_atr_filter: false
+  atr_period: 14
+  atr_multiplier: 1.5

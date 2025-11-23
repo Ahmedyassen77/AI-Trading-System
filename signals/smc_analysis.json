@@ -1,0 +1,816 @@
+{
+  "generated_at": "2025-11-23T09:57:35.761319+00:00",
+  "htf_bias": "bullish",
+  "statistics": {
+    "swing_highs": 282,
+    "swing_lows": 295,
+    "bos_choch_events": 46,
+    "sweeps": 514,
+    "order_blocks": 28,
+    "fvgs": 1384,
+    "signals": 47
+  },
+  "signals_count": 47,
+  "drawings_count": 42,
+  "signals": [
+    {
+      "timestamp": "2025-11-16T19:16:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08478,
+      "sl": 1.08599,
+      "tp": 1.08237,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-16T19:16:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08478,
+      "sl": 1.08599,
+      "tp": 1.08237,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-16T19:16:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08478,
+      "sl": 1.08577,
+      "tp": 1.08282,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-16T19:16:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08478,
+      "sl": 1.08577,
+      "tp": 1.08282,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-16T19:16:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08478,
+      "sl": 1.08577,
+      "tp": 1.08282,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-16T19:16:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08478,
+      "sl": 1.08577,
+      "tp": 1.08282,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T09:41:47Z",
+      "symbol": "EURUSD",
+      "action": "SELL",
+      "price": 1.08451,
+      "sl": 1.08528,
+      "tp": 1.08295,
+      "risk": 1.0,
+      "comment": "SMC_sweep_high_inside_bar",
+      "context": {
+        "sweep_type": "sweep_high",
+        "choch": true,
+        "entry_zone": "bearish_fvg",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-16T16:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08368,
+      "sl": 1.08335,
+      "tp": 1.08433,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    },
+    {
+      "timestamp": "2025-11-17T18:46:47Z",
+      "symbol": "EURUSD",
+      "action": "BUY",
+      "price": 1.08556,
+      "sl": 1.0844,
+      "tp": 1.08789,
+      "risk": 1.0,
+      "comment": "SMC_sweep_low_inside_bar",
+      "context": {
+        "sweep_type": "sweep_low",
+        "choch": true,
+        "entry_zone": "bullish_ob",
+        "confirmation": "inside_bar",
+        "htf_bias": "bullish"
+      }
+    }
+  ]
+}

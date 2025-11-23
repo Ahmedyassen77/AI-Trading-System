@@ -1,0 +1,377 @@
+[
+  {
+    "type": "background",
+    "object": "htf_bias",
+    "color": "green_light",
+    "label": "HTF Bias: BULLISH"
+  },
+  {
+    "type": "line",
+    "object": "swing_high",
+    "time": "2025-11-23 06:31:47.571794+00:00",
+    "price": 1.0914908862463193,
+    "color": "orange",
+    "label": "SH"
+  },
+  {
+    "type": "line",
+    "object": "swing_high",
+    "time": "2025-11-23 07:16:47.571794+00:00",
+    "price": 1.091452988144951,
+    "color": "orange",
+    "label": "SH"
+  },
+  {
+    "type": "line",
+    "object": "swing_high",
+    "time": "2025-11-23 08:16:47.571794+00:00",
+    "price": 1.091623365545917,
+    "color": "orange",
+    "label": "SH"
+  },
+  {
+    "type": "line",
+    "object": "swing_high",
+    "time": "2025-11-23 09:06:47.571794+00:00",
+    "price": 1.0913637219121466,
+    "color": "orange",
+    "label": "SH"
+  },
+  {
+    "type": "line",
+    "object": "swing_high",
+    "time": "2025-11-23 09:36:47.571794+00:00",
+    "price": 1.0922332446530025,
+    "color": "orange",
+    "label": "SH"
+  },
+  {
+    "type": "line",
+    "object": "swing_low",
+    "time": "2025-11-23 07:26:47.571794+00:00",
+    "price": 1.0886397533413765,
+    "color": "blue",
+    "label": "SL"
+  },
+  {
+    "type": "line",
+    "object": "swing_low",
+    "time": "2025-11-23 08:01:47.571794+00:00",
+    "price": 1.0886613137520051,
+    "color": "blue",
+    "label": "SL"
+  },
+  {
+    "type": "line",
+    "object": "swing_low",
+    "time": "2025-11-23 08:36:47.571794+00:00",
+    "price": 1.0889201105645125,
+    "color": "blue",
+    "label": "SL"
+  },
+  {
+    "type": "line",
+    "object": "swing_low",
+    "time": "2025-11-23 08:56:47.571794+00:00",
+    "price": 1.0883327113892396,
+    "color": "blue",
+    "label": "SL"
+  },
+  {
+    "type": "line",
+    "object": "swing_low",
+    "time": "2025-11-23 09:31:47.571794+00:00",
+    "price": 1.088072360519048,
+    "color": "blue",
+    "label": "SL"
+  },
+  {
+    "type": "arrow",
+    "object": "bos_bullish",
+    "time": "2025-11-21 04:11:47.571794+00:00",
+    "price": 1.0905034830600169,
+    "color": "magenta",
+    "label": "BOS_BULLISH",
+    "direction": "bullish"
+  },
+  {
+    "type": "arrow",
+    "object": "bos_bullish",
+    "time": "2025-11-21 20:21:47.571794+00:00",
+    "price": 1.0906353363921335,
+    "color": "magenta",
+    "label": "BOS_BULLISH",
+    "direction": "bullish"
+  },
+  {
+    "type": "arrow",
+    "object": "bos_bullish",
+    "time": "2025-11-21 20:26:47.571794+00:00",
+    "price": 1.0907838127570606,
+    "color": "magenta",
+    "label": "BOS_BULLISH",
+    "direction": "bullish"
+  },
+  {
+    "type": "arrow",
+    "object": "bos_bullish",
+    "time": "2025-11-21 20:26:47.571794+00:00",
+    "price": 1.0908711971869447,
+    "color": "magenta",
+    "label": "BOS_BULLISH",
+    "direction": "bullish"
+  },
+  {
+    "type": "arrow",
+    "object": "bos_bullish",
+    "time": "2025-11-21 21:21:47.571794+00:00",
+    "price": 1.0911439882676306,
+    "color": "magenta",
+    "label": "BOS_BULLISH",
+    "direction": "bullish"
+  },
+  {
+    "type": "arrow",
+    "object": "bos_bullish",
+    "time": "2025-11-22 03:56:47.571794+00:00",
+    "price": 1.091520285508535,
+    "color": "magenta",
+    "label": "BOS_BULLISH",
+    "direction": "bullish"
+  },
+  {
+    "type": "arrow",
+    "object": "bos_bullish",
+    "time": "2025-11-22 08:16:47.571794+00:00",
+    "price": 1.0916646479780612,
+    "color": "magenta",
+    "label": "BOS_BULLISH",
+    "direction": "bullish"
+  },
+  {
+    "type": "arrow",
+    "object": "bos_bullish",
+    "time": "2025-11-22 18:41:47.571794+00:00",
+    "price": 1.0918060299865768,
+    "color": "magenta",
+    "label": "BOS_BULLISH",
+    "direction": "bullish"
+  },
+  {
+    "type": "arrow",
+    "object": "bos_bullish",
+    "time": "2025-11-23 01:46:47.571794+00:00",
+    "price": 1.0920052895789538,
+    "color": "magenta",
+    "label": "BOS_BULLISH",
+    "direction": "bullish"
+  },
+  {
+    "type": "arrow",
+    "object": "bos_bullish",
+    "time": "2025-11-23 01:46:47.571794+00:00",
+    "price": 1.0920732015542067,
+    "color": "magenta",
+    "label": "BOS_BULLISH",
+    "direction": "bullish"
+  },
+  {
+    "type": "rectangle",
+    "object": "liquidity_high",
+    "time": "2025-11-23 09:06:47.571794+00:00",
+    "price": 1.091623365545917,
+    "height": 0.001,
+    "color": "orange",
+    "label": "External Liq HIGH"
+  },
+  {
+    "type": "rectangle",
+    "object": "liquidity_high",
+    "time": "2025-11-23 09:36:47.571794+00:00",
+    "price": 1.0922332446530025,
+    "height": 0.001,
+    "color": "orange",
+    "label": "External Liq HIGH"
+  },
+  {
+    "type": "rectangle",
+    "object": "liquidity_high",
+    "time": "2025-11-23 09:36:47.571794+00:00",
+    "price": 1.0922332446530025,
+    "height": 0.001,
+    "color": "orange",
+    "label": "External Liq HIGH"
+  },
+  {
+    "type": "rectangle",
+    "object": "liquidity_low",
+    "time": "2025-11-23 08:56:47.571794+00:00",
+    "price": 1.0883327113892396,
+    "height": 0.001,
+    "color": "blue",
+    "label": "External Liq LOW"
+  },
+  {
+    "type": "rectangle",
+    "object": "liquidity_low",
+    "time": "2025-11-23 09:31:47.571794+00:00",
+    "price": 1.088072360519048,
+    "height": 0.001,
+    "color": "blue",
+    "label": "External Liq LOW"
+  },
+  {
+    "type": "rectangle",
+    "object": "liquidity_low",
+    "time": "2025-11-23 09:31:47.571794+00:00",
+    "price": 1.088072360519048,
+    "height": 0.001,
+    "color": "blue",
+    "label": "External Liq LOW"
+  },
+  {
+    "type": "marker",
+    "object": "sweep",
+    "time": "2025-11-23 05:31:47.571794+00:00",
+    "price": 1.0878790620798784,
+    "color": "purple",
+    "label": "SWEEP LOW",
+    "marker": "X"
+  },
+  {
+    "type": "marker",
+    "object": "sweep",
+    "time": "2025-11-23 05:31:47.571794+00:00",
+    "price": 1.0879152091987316,
+    "color": "purple",
+    "label": "SWEEP LOW",
+    "marker": "X"
+  },
+  {
+    "type": "marker",
+    "object": "sweep",
+    "time": "2025-11-23 08:56:47.571794+00:00",
+    "price": 1.088598277507267,
+    "color": "purple",
+    "label": "SWEEP LOW",
+    "marker": "X"
+  },
+  {
+    "type": "marker",
+    "object": "sweep",
+    "time": "2025-11-23 09:51:47.571794+00:00",
+    "price": 1.0886397533413765,
+    "color": "purple",
+    "label": "SWEEP LOW",
+    "marker": "X"
+  },
+  {
+    "type": "marker",
+    "object": "sweep",
+    "time": "2025-11-23 09:51:47.571794+00:00",
+    "price": 1.0886613137520051,
+    "color": "purple",
+    "label": "SWEEP LOW",
+    "marker": "X"
+  },
+  {
+    "type": "rectangle",
+    "object": "bullish_ob",
+    "time": "2025-11-21 20:06:47.571794+00:00",
+    "price_high": 1.0891468015949555,
+    "price_low": 1.0884274008697417,
+    "color": "green",
+    "label": "BULLISH OB",
+    "extend": true
+  },
+  {
+    "type": "rectangle",
+    "object": "bullish_ob",
+    "time": "2025-11-21 20:06:47.571794+00:00",
+    "price_high": 1.0891468015949555,
+    "price_low": 1.0884274008697417,
+    "color": "green",
+    "label": "BULLISH OB",
+    "extend": true
+  },
+  {
+    "type": "rectangle",
+    "object": "bullish_ob",
+    "time": "2025-11-21 21:16:47.571794+00:00",
+    "price_high": 1.090005723512536,
+    "price_low": 1.0891168260786614,
+    "color": "green",
+    "label": "BULLISH OB",
+    "extend": true
+  },
+  {
+    "type": "rectangle",
+    "object": "bullish_ob",
+    "time": "2025-11-22 08:11:47.571794+00:00",
+    "price_high": 1.088406347007007,
+    "price_low": 1.0876079749760323,
+    "color": "green",
+    "label": "BULLISH OB",
+    "extend": true
+  },
+  {
+    "type": "rectangle",
+    "object": "bullish_ob",
+    "time": "2025-11-22 18:31:47.571794+00:00",
+    "price_high": 1.0898066809144191,
+    "price_low": 1.0891694303115955,
+    "color": "green",
+    "label": "BULLISH OB",
+    "extend": true
+  },
+  {
+    "type": "rectangle",
+    "object": "bullish_fvg",
+    "time": "2025-11-23 09:36:47.571794+00:00",
+    "price_high": 1.0914704801597928,
+    "price_low": 1.0901008094631048,
+    "color": "yellow",
+    "label": "FVG",
+    "extend": true
+  },
+  {
+    "type": "rectangle",
+    "object": "bullish_fvg",
+    "time": "2025-11-23 09:41:47.571794+00:00",
+    "price_high": 1.0895428915625198,
+    "price_low": 1.0884475939859632,
+    "color": "yellow",
+    "label": "FVG",
+    "extend": true
+  },
+  {
+    "type": "rectangle",
+    "object": "bearish_fvg",
+    "time": "2025-11-23 09:46:47.571794+00:00",
+    "price_high": 1.0914704801597928,
+    "price_low": 1.0902501268027072,
+    "color": "yellow",
+    "label": "FVG",
+    "extend": true
+  },
+  {
+    "type": "rectangle",
+    "object": "bearish_fvg",
+    "time": "2025-11-23 09:51:47.571794+00:00",
+    "price_high": 1.0895428915625198,
+    "price_low": 1.0893005802818352,
+    "color": "yellow",
+    "label": "FVG",
+    "extend": true
+  },
+  {
+    "type": "rectangle",
+    "object": "bearish_fvg",
+    "time": "2025-11-23 09:56:47.571794+00:00",
+    "price_high": 1.0895523076656446,
+    "price_low": 1.0890182854444626,
+    "color": "yellow",
+    "label": "FVG",
+    "extend": true
+  }
+]
