@@ -1,6 +1,4 @@
-# Quick Start - 5 Minutes Setup
-
-أسرع طريقة لتشغيل النظام
+# Quick Start - أسرع طريقة لتشغيل النظام
 
 ---
 
@@ -14,19 +12,11 @@ cd AI-Trading-System
 # 2. Install
 pip install -r requirements.txt
 
-# 3. Test System
-python test_system.py
-
-# 4. Generate Signals
-python bridge/generate_signals.py
-
-# 5. Copy to MT5
-copy signals\bridge.txt "%APPDATA%\MetaQuotes\Terminal\Common\Files\bridge.txt"
-
-# 6. Open MT5 Strategy Tester → EA_SignalBridge → Start
+# 3. Run backtest
+RUN_BACKTEST.bat
 ```
 
-**Done! ✅**
+**Done! ✅** MT5 Strategy Tester سيفتح تلقائياً
 
 ---
 
@@ -74,128 +64,150 @@ Results: 5/6 tests passed
 
 *(MT5 import سيفشل لأنه مش مطلوب الآن)*
 
-### 5️⃣ ولّد الإشارات
+### 5️⃣ شغّل الباكتيست
 
+**الطريقة الأسهل - ملف واحد:**
 ```bash
+RUN_BACKTEST.bat
+```
+
+**أو الطريقة المفصلة:**
+```bash
+# توليد الإشارات
 python bridge\generate_signals.py
-```
 
-**المفروض تشوف:**
-```
-✅ تم جلب 2000 شمعة
-✅ تم توليد 1999 إشارة
-✅ تم! الملف جاهز للـ EA
-```
-
-### 6️⃣ انسخ للـ MT5
-
-```bash
+# نسخ للـ MT5
 copy signals\bridge.txt "%APPDATA%\MetaQuotes\Terminal\Common\Files\bridge.txt"
+copy signals\drawings.json "%APPDATA%\MetaQuotes\Terminal\Common\Files\drawings.json"
+
+# تشغيل MT5 Tester
+automation\run_tester.bat
 ```
-
-### 7️⃣ شغّل Backtest
-
-1. افتح **MT5**
-2. اضغط **Ctrl+R** (Strategy Tester)
-3. اختر **EA_SignalBridge**
-4. Symbol: **EURUSD**, Period: **M15**
-5. Inputs:
-   - `InpEnableTrading = true`
-   - `InpSource = 0`
-   - `InpFileOrMask = "bridge.txt"`
-6. اضغط **Start**
-
-**Done! ✅**
 
 ---
 
-## 🎯 الأسرع (سكربت واحد)
+## 🎯 الملفات المهمة
 
-```bash
-automation\run_backtest.bat
-```
-
-هذا يعمل كل شيء تلقائياً!
-
----
-
-## 📚 للتفاصيل الكاملة
-
-- **Setup الكامل:** [SETUP.md](SETUP.md)
-- **الوثائق:** [README.md](README.md)
-- **EA Integration:** [EA_INTEGRATION.md](EA_INTEGRATION.md)
+| الملف | الوظيفة |
+|-------|---------|
+| `RUN_BACKTEST.bat` | ✨ **استخدم هذا** - يعمل كل شيء تلقائياً |
+| `automation/run_tester.bat` | يفتح MT5 Strategy Tester فقط |
+| `bridge/generate_signals.py` | يولد الإشارات والرسومات |
+| `strategy/config.yaml` | إعدادات الاستراتيجية |
 
 ---
 
-## ✅ تأكد أن كل شيء شغال
+## ⚙️ إعدادات سريعة
 
-```bash
-# 1. النظام صحيح
-python test_system.py
+### تعديل الرمز والفترة:
 
-# 2. الإشارات اتولدت
-dir signals\bridge.txt
-
-# 3. الملف في MT5
-dir "%APPDATA%\MetaQuotes\Terminal\Common\Files\bridge.txt"
+```yaml
+# افتح strategy/config.yaml
+symbol: "GBPUSD"  # غير الرمز
+ltf_timeframe: "M1"  # غير الفريم
+backtest_bars: 5000  # غير عدد الشموع
 ```
+
+### تعديل المخاطرة:
+
+```yaml
+risk_pct: 2.0  # كانت 1.0
+min_rr: 3.0    # كان 2.0
+```
+
+**ثم شغّل:** `RUN_BACKTEST.bat`
+
+---
+
+## 🔍 فهم النتائج
+
+### بعد تشغيل generate_signals.py:
+
+```
+📊 HTF Bias: BULLISH          ← الاتجاه العام
+📈 Statistics:
+   - Swing Highs: 288         ← عدد القمم
+   - Swing Lows: 279          ← عدد القيعان
+   - Sweeps: 516              ← عدد Sweeps
+   - Order Blocks: 26         ← عدد OB
+   - Signals: 11              ← عدد الصفقات
+```
+
+### الملفات المولدة:
+
+1. **`signals/bridge.txt`** - الإشارات للـ EA
+2. **`signals/drawings.json`** - معلومات الرسم
+3. **`signals/smc_analysis.json`** - التحليل الكامل
+
+---
+
+## 🎨 ماذا سيرسم EA على الشارت؟
+
+| المفهوم | الشكل | اللون |
+|---------|-------|-------|
+| HTF Bias | خلفية | أخضر/أحمر فاتح |
+| Swing High | خط أفقي | برتقالي |
+| Swing Low | خط أفقي | أزرق |
+| BOS | سهم | قرمزي |
+| CHoCH | سهم | سماوي |
+| Order Block | مستطيل | أخضر/أحمر |
+| FVG | مستطيل | أصفر |
+| Liquidity | مستطيل | برتقالي/أزرق |
+| Sweep | X | بنفسجي |
 
 ---
 
 ## 🆘 مشاكل شائعة
 
-**❌ Python لا يعمل**
-```bash
-# ثبّت من python.org
-# تأكد من تفعيل "Add to PATH"
+### ❌ `MT5 terminal64.exe not found`
+
+**الحل:**
+```batch
+# افتح automation\run_tester.bat
+# عدّل السطر:
+set "TERM=C:\Program Files\MetaTrader 5\terminal64.exe"
+
+# إلى المسار الصحيح على جهازك
 ```
 
-**❌ pip لا يعمل**
+### ❌ `ModuleNotFoundError: No module named 'yaml'`
+
+**الحل:**
 ```bash
-python -m pip install --upgrade pip
+pip install pyyaml
 ```
 
-**❌ MT5 ما يلقى الملف**
-```bash
-# تأكد نسخت للمكان الصحيح
-echo %APPDATA%\MetaQuotes\Terminal\Common\Files
-```
+### ❌ EA لا يقرأ الملفات
 
-**❌ EA ما يشتغل**
-```bash
-# في MT5:
-# Tools → Options → Expert Advisors
-# ✅ Allow automated trading
-# ✅ Allow DLL imports
+**الحل:**
+```
+1. تأكد الملفات في:
+   %APPDATA%\MetaQuotes\Terminal\Common\Files\
+
+2. EA Inputs:
+   InpSource = 0 (MODE_COMMON_FILES)
+   InpFileOrMask = "bridge.txt"
+   InpDrawingsFile = "drawings.json"
 ```
 
 ---
 
 ## 🚀 الخطوة التالية
 
-الآن النظام شغال! 
+**الآن النظام شغال! جرّب:**
 
-**بعدين:**
-1. ✅ افهم النتائج من الباكتيست
-2. ✅ عدّل في `strategy/config_simple.yaml`
-3. ✅ جرب إعدادات مختلفة
-4. ✅ طوّر استراتيجيتك الخاصة
+1. ✅ غير الإعدادات في `config.yaml`
+2. ✅ شغّل `RUN_BACKTEST.bat` مرة ثانية
+3. ✅ راجع النتائج في MT5
+4. ✅ حلل الصفقات
 
 **للتطوير:**
-```bash
-# عدّل الاستراتيجية
-notepad strategy\simple_strategy.py
-
-# عدّل الإعدادات
-notepad strategy\config_simple.yaml
-
-# ولّد إشارات جديدة
-python bridge\generate_signals.py
-
-# اختبر
-automation\run_backtest.bat
-```
+- عدّل `strategy/strategy.py` لتغيير المنطق
+- عدّل `config.yaml` لتغيير البارامترات
+- كل شيء سهل التعديل!
 
 ---
 
 **Time to first backtest: < 5 minutes ⚡**
+
+**كل ما تحتاجه:** `RUN_BACKTEST.bat` 🎯

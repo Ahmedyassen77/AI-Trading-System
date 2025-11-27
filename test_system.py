@@ -65,11 +65,12 @@ def test_required_files():
     
     base = Path(__file__).parent
     required_files = [
-        'strategy/simple_strategy.py',
-        'strategy/config_simple.yaml',
+        'strategy/strategy.py',
+        'strategy/config.yaml',
         'bridge/generate_signals.py',
-        'automation/backtest_requests.yaml',
-        'automation/run_backtest.bat',
+        'automation/run_tester.bat',
+        'automation/RUN_BACKTEST.bat',
+        'automation/tester.ini',
         'automation/pull.bat',
         'README.md',
         'requirements.txt'
@@ -92,27 +93,31 @@ def test_strategy_import():
     
     try:
         sys.path.insert(0, str(Path(__file__).parent / 'strategy'))
-        from simple_strategy import SimpleStrategy
+        from strategy import SMCStrategy
         
         # Test instantiation
         config = {
             'symbol': 'EURUSD',
-            'sl_points': 150,
-            'tp_points': 300,
-            'risk_pct': 1.0
+            'htf_timeframe': 'H4',
+            'mtf_timeframe': 'M15',
+            'ltf_timeframe': 'M5',
+            'swing_lookback': 3,
+            'risk_pct': 1.0,
+            'min_rr': 2.0
         }
-        strategy = SimpleStrategy(config)
+        strategy = SMCStrategy(config)
         
-        print(f"✅ SimpleStrategy imported successfully")
+        print(f"✅ SMC Strategy imported successfully")
         print(f"   - Symbol: {strategy.symbol}")
-        print(f"   - SL: {strategy.sl_points} points")
-        print(f"   - TP: {strategy.tp_points} points")
-        print(f"   - Risk: {strategy.risk}%")
+        print(f"   - HTF: {strategy.htf}")
+        print(f"   - MTF: {strategy.mtf}")
+        print(f"   - LTF: {strategy.ltf}")
+        print(f"   - Min R:R: {strategy.min_rr}")
         
         return True
         
     except Exception as e:
-        print(f"❌ SimpleStrategy import failed: {e}")
+        print(f"❌ SMC Strategy import failed: {e}")
         return False
 
 def test_config_loading():
@@ -122,15 +127,16 @@ def test_config_loading():
     try:
         import yaml
         
-        config_path = Path(__file__).parent / 'strategy' / 'config_simple.yaml'
+        config_path = Path(__file__).parent / 'strategy' / 'config.yaml'
         with open(config_path, 'r', encoding='utf-8') as f:
             config = yaml.safe_load(f)
         
         print(f"✅ Config loaded successfully")
         print(f"   - Symbol: {config.get('symbol')}")
-        print(f"   - Timeframe: {config.get('timeframe')}")
-        print(f"   - SL Points: {config.get('sl_points')}")
-        print(f"   - TP Points: {config.get('tp_points')}")
+        print(f"   - HTF: {config.get('htf_timeframe')}")
+        print(f"   - MTF: {config.get('mtf_timeframe')}")
+        print(f"   - LTF: {config.get('ltf_timeframe')}")
+        print(f"   - Min R:R: {config.get('min_rr')}")
         print(f"   - Backtest Bars: {config.get('backtest_bars')}")
         
         return True
@@ -149,29 +155,44 @@ def test_signal_generation():
         from datetime import datetime, timezone
         
         sys.path.insert(0, str(Path(__file__).parent / 'strategy'))
-        from simple_strategy import SimpleStrategy
+        from strategy import SMCStrategy
         
         # Create dummy data
-        bars = 100
-        dates = pd.date_range(end=datetime.now(timezone.utc), periods=bars, freq='15min')
+        bars = 200
+        dates = pd.date_range(end=datetime.now(timezone.utc), periods=bars, freq='5min')
+        
+        # More realistic data with trend
+        base_price = 1.0850
+        trend = np.linspace(0, 0.0020, bars)
+        noise = np.random.normal(0, 0.0005, bars)
+        close_prices = base_price + trend + noise
         
         df = pd.DataFrame({
             'time': dates,
-            'open': np.random.uniform(1.08, 1.09, bars),
-            'high': np.random.uniform(1.085, 1.095, bars),
-            'low': np.random.uniform(1.075, 1.085, bars),
-            'close': np.random.uniform(1.08, 1.09, bars)
+            'open': close_prices + np.random.uniform(-0.0001, 0.0001, bars),
+            'high': close_prices + np.random.uniform(0.0001, 0.0003, bars),
+            'low': close_prices - np.random.uniform(0.0001, 0.0003, bars),
+            'close': close_prices,
+            'tick_volume': np.random.randint(100, 1000, bars)
         })
+        
+        # Ensure high/low are correct
+        df['high'] = df[['open', 'close', 'high']].max(axis=1)
+        df['low'] = df[['open', 'close', 'low']].min(axis=1)
         
         # Generate signals
         config = {
             'symbol': 'EURUSD',
-            'sl_points': 150,
-            'tp_points': 300,
-            'risk_pct': 1.0
+            'htf_timeframe': 'H4',
+            'mtf_timeframe': 'M15',
+            'ltf_timeframe': 'M5',
+            'swing_lookback': 3,
+            'risk_pct': 1.0,
+            'min_rr': 2.0
         }
-        strategy = SimpleStrategy(config)
-        signals = strategy.generate_signals(df)
+        strategy = SMCStrategy(config)
+        result = strategy.generate_signals(df)
+        signals = result['signals']
         
         print(f"✅ Signal generation successful")
         print(f"   - Input bars: {len(df)}")
